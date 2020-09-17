@@ -4,13 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie app wowowowowo</title>
+    <link rel="stylesheet" href="./styles/styles/style.css">
+    <title>Movie app</title>
 </head>
 
 <body>
-
+    <header>
+        <h1>What do you want to watch tonight?</h1>
+    </header>
+    <main>
+        <section class="formSection">
+            <form action="">
+                <label for="movieGenre">Choose your genre:</label>
+                <select name="movieGenre" id="movieGenre">
+                  <option value="27">Horror</option>
+                  <option value="28">Action</option>
+                  <option value="35">Comedy</option>
+                  <option value="878">Sci-Fi</option>
+                  <option value="10749">Romance</option>
+                </select>
+              </form>
+        </section>
+        
+        <section class="gallerySection">
+            <ul class="gallery"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>Created at <span><a href="https://junocollege.com/">Juno College</a></span></p>
+    </footer>
 </body>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
+
 
 </html>

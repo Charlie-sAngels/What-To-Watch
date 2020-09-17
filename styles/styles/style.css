@@ -241,3 +241,13 @@ html {
 img {
   width: 100%;
 }
+
+.gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  width: 33%;
+}

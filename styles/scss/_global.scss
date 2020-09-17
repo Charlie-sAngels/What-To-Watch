@@ -2,3 +2,11 @@ img {
     width: 100%;
 }
 
+.gallery {
+    display: flex; 
+    width: 100%; 
+    flex-wrap: wrap; 
+    li {
+        width: 33%; 
+    }
+}
