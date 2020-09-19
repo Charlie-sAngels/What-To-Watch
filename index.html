@@ -11,21 +11,23 @@
 <body>
     <header>
         <h1>What do you want to watch tonight?</h1>
+        <p> Are you tired of always asking yourself what to watch? Are you endlessly scrolling through Netflix trying to
+            pick a movie? Select a genre that you want to watch and we will provide you with a bunch of options! </p>
     </header>
     <main>
         <section class="formSection">
             <form action="">
                 <label for="movieGenre">Choose your genre:</label>
-                <select name="movieGenre" id="movieGenre">
-                  <option value="27">Horror</option>
-                  <option value="28">Action</option>
-                  <option value="35">Comedy</option>
-                  <option value="878">Sci-Fi</option>
-                  <option value="10749">Romance</option>
+                <select autocomplete="off" name="movieGenre" id="movieGenre">
+                    <option value="28">Action</option>
+                    <option value="27">Horror</option>
+                    <option value="35">Comedy</option>
+                    <option value="878">Sci-Fi</option>
+                    <option value="10749">Romance</option>
                 </select>
-              </form>
+            </form>
         </section>
-        
+
         <section class="gallerySection">
             <ul class="gallery"></ul>
         </section>
@@ -34,7 +36,8 @@
         <p>Created at <span><a href="https://junocollege.com/">Juno College</a></span></p>
     </footer>
 </body>
-<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src='https://code.jquery.com/jquery-3.4.0.min.js'
+    integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
 
 

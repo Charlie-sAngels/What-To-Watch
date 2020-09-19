@@ -242,12 +242,27 @@ img {
   width: 100%;
 }
 
+header {
+  text-align: center;
+}
+
+.formSection form {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .gallery {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
 }
 
 .gallery li {
-  width: 33%;
+  font-size: 1.5rem;
+  width: calc(25% - 25px);
+  min-width: 200px;
 }
