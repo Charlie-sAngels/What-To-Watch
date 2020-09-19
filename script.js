@@ -12,6 +12,7 @@ movieApp.getMovies = function(movie = 28) {
             page: movieApp.randomPage,
             api_key: movieApp.key,
             with_genres: movie,
+            year: 2019,
         }
     }).then((res) => {
         console.log(res);
@@ -43,9 +44,24 @@ movieApp.getGenre = () => {
         const movie = $(this).val();
         console.log(movie);
         movieApp.getMovies(movie);
+        if (movie === "27") {
+            $("body").removeClass();
+            $("body").addClass("horror");
+        } else if (movie === "28") {
+            $("body").removeClass();
+            $("body").addClass("action");
+        } else if (movie === "35") {
+            $("body").removeClass();
+            $("body").addClass("comedy");
+        } else if (movie === "878") {
+            $("body").removeClass();
+            $("body").addClass("sciFi");
+        } else if (movie === "10749") {
+            $("body").removeClass();
+            $("body").addClass("romance");
+        };
 
-
-    })
+    });
 }
 
 

@@ -4,36 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Piedra&family=Playfair+Display&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles/style.css">
     <title>Movie app</title>
 </head>
 
-<body class="wrapper target">
-    <header>
-        <h1>What do you want to watch tonight?</h1>
-        <p> Are you tired of always asking yourself what to watch? Are you endlessly scrolling through Netflix trying to pick a movie? Select a genre that you want to watch and we will provide you with a bunch of options! </p>
-    </header>
-    <main>
-        <section class="formSection">
-            <form action="">
-                <label for="movieGenre">Choose your genre:</label>
-                <select autocomplete="off" name="movieGenre" id="movieGenre">
+<body class="action">
+    <div class="wrapper">
+        <header>
+            <h1>What do you want to watch tonight?</h1>
+            <p> Are you tired of always asking yourself what to watch? Are you endlessly scrolling through Netflix trying to pick a movie? Select a genre that you want to watch and we will provide you with a bunch of options! </p>
+        </header>
+        <main>
+            <section class="formSection">
+                <form action="">
+                    <label for="movieGenre">Choose your genre:</label>
+                    <select autocomplete="off" name="movieGenre" id="movieGenre">
                     <option value="28">Action</option>
                     <option value="27">Horror</option>
                     <option value="35">Comedy</option>
                     <option value="878">Sci-Fi</option>
                     <option value="10749">Romance</option>
                 </select>
-            </form>
-        </section>
+                </form>
+            </section>
 
-        <section class="gallerySection">
-            <ul class="gallery"></ul>
-        </section>
-    </main>
+            <section class="gallerySection">
+                <ul class="gallery"></ul>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Created at <span><a href="https://junocollege.com/">Juno College</a></span></p>
     </footer>
+
 </body>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>

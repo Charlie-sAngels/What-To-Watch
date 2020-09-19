@@ -23,10 +23,20 @@ header {
     padding-left: 0;
     li {
         font-size: 1.5rem;
-        width: calc(25% - 25px);
-        min-width: 200px;
+        width: calc(25% - 45px);
+        min-width: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px;
         .titleContainer {
-            height: 9%;
+            height: 12%;
+            margin-bottom: 20px;
+        }
+        .posterContainer {
+            max-width: 180px;
         }
     }
 }
@@ -35,10 +45,41 @@ header {
     background-image: url(../assets/actionBackground.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Anton', sans-serif;
 }
 
 .horror {
     background-image: url(../assets/horrorBackground.jpg);
+    background-size: contain;
+    background-position: center;
+    font-family: 'Piedra', cursive;
+}
+
+.comedy {
+    background-image: url(../assets/comedyBackground.jpg);
+    background-size: contain;
+    background-position: center;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.sciFi {
+    background-image: url(../assets/sciFiBackground.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Righteous', cursive;
+    color: #5dbcd2;
 }
+
+.romance {
+    background-image: url(../assets/romanceBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playfair Display', serif;
+}
+
+// font-family: 'Anton', sans-serif;
+// font-family: 'Paytone One', sans-serif;
+// font-family: 'Piedra', cursive;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Righteous', cursive;
+// #726E97
