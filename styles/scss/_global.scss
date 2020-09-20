@@ -21,6 +21,7 @@ header {
     list-style: none;
     text-align: center;
     padding-left: 0;
+
     li {
         font-size: 1.5rem;
         width: calc(25% - 45px);
@@ -31,10 +32,12 @@ header {
         align-items: center;
         margin: 20px 0;
         padding: 20px;
+
         .titleContainer {
             height: 12%;
             margin-bottom: 20px;
         }
+
         .posterContainer {
             max-width: 180px;
         }
@@ -60,6 +63,16 @@ header {
     background-size: contain;
     background-position: center;
     font-family: 'Paytone One', sans-serif;
+
+    .gallery {
+        p {
+            color: #105F7E;
+        }
+
+        li {
+            background-color: #FFE91F;
+        }
+    }
 }
 
 .sciFi {
@@ -67,7 +80,7 @@ header {
     background-size: cover;
     background-position: center;
     font-family: 'Righteous', cursive;
-    color: #5dbcd2;
+    // color: #5dbcd2;
 }
 
 .romance {
@@ -75,6 +88,16 @@ header {
     background-size: cover;
     background-position: center;
     font-family: 'Playfair Display', serif;
+
+    // .gallery {
+    //     p {
+    //         color: #342838;
+    //     }
+
+    //     li {
+    //         background-color: #FE8DE0;
+    //     }
+    // }
 }
 
 // font-family: 'Anton', sans-serif;

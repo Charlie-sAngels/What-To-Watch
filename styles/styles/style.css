@@ -26,8 +26,7 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -45,8 +44,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b, strong {
@@ -140,8 +138,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -159,8 +156,7 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -212,13 +208,11 @@ template {
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .sr-only {
@@ -229,8 +223,7 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -259,14 +252,10 @@ header {
 }
 
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   list-style: none;
   text-align: center;
   padding-left: 0;
@@ -277,16 +266,9 @@ header {
   width: calc(25% - 45px);
   min-width: 250px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
   padding: 20px;
 }
@@ -321,12 +303,19 @@ header {
   font-family: 'Paytone One', sans-serif;
 }
 
+.comedy .gallery p {
+  color: #105F7E;
+}
+
+.comedy .gallery li {
+  background-color: #FFE91F;
+}
+
 .sciFi {
   background-image: url(../assets/sciFiBackground.jpg);
   background-size: cover;
   background-position: center;
   font-family: 'Righteous', cursive;
-  color: #5dbcd2;
 }
 
 .romance {

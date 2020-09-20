@@ -12,12 +12,13 @@ movieApp.getMovies = function(movie = 28) {
             page: movieApp.randomPage,
             api_key: movieApp.key,
             with_genres: movie,
-            year: 2019,
+            // year: year,
         }
     }).then((res) => {
         console.log(res);
         $('.gallery').empty();
         movieApp.displayResults(res);
+        // movieApp.getYear()
     })
 }
 
@@ -64,12 +65,21 @@ movieApp.getGenre = () => {
     });
 }
 
-
+movieApp.getYear = () => {
+    $('#movieYear').on('change', function () {
+        const year = parseInt($(this).val());
+        movieApp.getMovies(year);
+        console.log(year);
+        return year
+        // movieApp.getMovies(movies);
+    });
+}
 
 //here is where we call the thigns we need to do once the page is ready
 
 movieApp.init = () => {
     movieApp.getGenre();
+    // movieApp.getYear(); check with instructor
     movieApp.getMovies();
 }
 
