@@ -1,7 +1,13 @@
+// GENERAL STYLES
 img {
     width: 100%;
 }
 
+p {
+    letter-spacing: 1px;
+}
+
+// HEADER STYLES
 header {
     text-align: center;
     width: 80%; 
@@ -22,10 +28,7 @@ header {
     }
 }
 
-p {
-    letter-spacing: 1px;
-}
-
+// FORM (DROP-DOWN MENU) STYLES 
 .formSection {
     display: flex; 
     flex-wrap: wrap; 
@@ -48,6 +51,7 @@ p {
     }
 }
 
+// GALLERY STYLES (MOVIE POSTERS) 
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +60,6 @@ p {
     list-style: none;
     text-align: center;
     padding-left: 0;
-
     li {
         font-size: 2rem;
         width: calc(25% - 45px);
@@ -68,18 +71,17 @@ p {
         margin: 20px 0;
         padding: 20px 20px 0px 20px;
         border-radius: 5px; 
-
         .titleContainer {
             height: 12%;
             margin-bottom: 20px;
         }
-
         .posterContainer {
             max-width: 180px;
         }
     }
 }
 
+// FOOTER STYLES
 footer {
     text-align: center; 
     font-size: 2rem; 
@@ -88,133 +90,3 @@ footer {
         margin: 0;
     }
 }
-
-.action {
-    background-image: url(../assets/actionBackground.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Anton', sans-serif;
-    header {
-        background-color: #FBF4E9;
-        box-shadow: 5px 5px 10px black;
-    }
-
-    li {
-        background-color: #FBF4E9;
-        box-shadow: 5px 5px 10px black;
-    }
-
-    .formSection {
-        background-color: #FBF4E9;
-        box-shadow: 5px 5px 10px black;
-    }
-    
-    footer {
-        background-color: #FBF4E9;
-        a {
-            color: black;
-        }
-    }
-}
-
-.horror {
-    background-image: url(../assets/horrorBackground.jpg);
-    background-size: contain;
-    background-position: center;
-    font-family: 'Piedra', cursive;
-    header {
-        background-color: #333333;
-        box-shadow: 5px 5px 10px #E3E3E3;
-        color: #E3E3E3; 
-    }
-
-    li {
-        background-color: #333333;
-        box-shadow: 5px 5px 10px #E3E3E3;
-        color: #E3E3E3; 
-    }
-
-    .formSection {
-        background-color: #333333;
-        box-shadow: 5px 5px 10px #E3E3E3;
-        color: #E3E3E3; 
-        select {
-            color:  #E3E3E3;
-        }
-    }
-    
-    footer {
-        background-color: #333333;
-        color: #E3E3E3;
-        a {
-            color: #E3E3E3;
-        }
-    }
-}
-
-.comedy {
-    background-image: url(../assets/comedyBackground.jpg);
-    background-size: contain;
-    background-position: center;
-    font-family: 'Paytone One', sans-serif;
-    header {
-        background-color: #105F7E;
-        box-shadow: 5px 5px 10px#FFE91F;
-        color: #FFE91F; 
-    }
-
-    li {
-        background-color: #105F7E;
-        box-shadow: 5px 5px 10px #FFE91F;
-        color: #FFE91F; 
-    }
-
-    .formSection {
-        background-color: #105F7E;
-        box-shadow: 5px 5px 10px #FFE91F;
-        color: #FFE91F; 
-        select {
-            color:  #FFE91F;
-        }
-    }
-    
-    footer {
-        background-color: #105F7E;
-        color: #FFE91F;
-        a {
-            color: #FFE91F;
-        }
-    }
-}
-
-.sciFi {
-    background-image: url(../assets/sciFiBackground.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Righteous', cursive;
-    // color: #5dbcd2;
-}
-
-.romance {
-    background-image: url(../assets/romanceBackground.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Playfair Display', serif;
-
-    // .gallery {
-    //     p {
-    //         color: #342838;
-    //     }
-
-    //     li {
-    //         background-color: #FE8DE0;
-    //     }
-    // }
-}
-
-// font-family: 'Anton', sans-serif;
-// font-family: 'Paytone One', sans-serif;
-// font-family: 'Piedra', cursive;
-// font-family: 'Playfair Display', serif;
-// font-family: 'Righteous', cursive;
-// #726E97

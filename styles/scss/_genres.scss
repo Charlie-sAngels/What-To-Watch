@@ -1,0 +1,167 @@
+// STYLES FOR ACTION GENRE
+.action {
+    background-image: url(../assets/actionBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Anton', sans-serif;
+    header {
+        background-color: #FBF4E9;
+        box-shadow: 5px 5px 10px black;
+    }
+    li {
+        background-color: #FBF4E9;
+        box-shadow: 5px 5px 10px black;
+    }
+    .formSection {
+        background-color: #FBF4E9;
+        box-shadow: 5px 5px 10px black;
+    }
+    footer {
+        background-color: #FBF4E9;
+        a {
+            color: black;
+        }
+    }
+}
+
+// STYLES FOR HORROR GENRE 
+.horror {
+    background-image: url(../assets/horrorBackground.jpg);
+    background-size: contain;
+    background-position: center;
+    font-family: 'Piedra', cursive;
+    header {
+        background-color: #333333;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+    }
+    li {
+        background-color: #333333;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+    }
+    .formSection {
+        background-color: #333333;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+        select {
+            color:#E3E3E3;
+        }
+        select option {
+            background-color: #333333; 
+        }
+    }
+    footer {
+        background-color: #333333;
+        color: #E3E3E3;
+        a {
+            color: #E3E3E3;
+        }
+    }
+}
+
+// STYLES FOR COMEDY GENRE 
+.comedy {
+    background-image: url(../assets/comedyBackground.jpg);
+    background-size: contain;
+    background-position: center;
+    font-family: 'Paytone One', sans-serif;
+    header {
+        background-color: #EB9486;
+        box-shadow: 5px 5px 10px lightblue;
+        color: #E3E3E3; 
+    }
+    li {
+        background-color: #EB9486;
+        box-shadow: 5px 5px 10px lightblue;
+        color: #E3E3E3;  
+    }
+    .formSection {
+        background-color: #EB9486;
+        box-shadow: 5px 5px 10px lightblue;
+        color: #E3E3E3; 
+        select {
+            color: #E3E3E3;
+            opacity: 1; 
+        }
+        select option {
+            background-color: #EB9486; 
+        }
+    }
+    footer {
+        background-color: #EB9486;
+        color: #E3E3E3;
+        a {
+            color: #E3E3E3;
+        }
+    }
+}
+
+// STYLES FOR SCIFI GENRE 
+.sciFi {
+    background-image: url(../assets/sciFiBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Righteous', cursive;
+    header {
+        background-color: #CFDAE1;
+        box-shadow: 5px 5px 10px #726E97;
+        color: #333333; 
+    }
+    li {
+        background-color:  #CFDAE1;
+        box-shadow: 5px 5px 10px #726E97;
+        color: #333333; 
+    }
+    .formSection {
+        background-color:  #CFDAE1;
+        box-shadow: 5px 5px 10px #726E97;
+        color: #333333; 
+        select {
+            color: #333333;
+        }
+    }
+    footer {
+        background-color:  #CFDAE1;
+        color: #333333;
+        a {
+            color: #333333;
+        }
+    }
+}
+
+// STYLES FOR ROMANCE GENRE 
+.romance {
+    background-image: url(../assets/romanceBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playfair Display', serif;
+    header {
+        background-color: #AC1C51;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+    }
+    li {
+        background-color: #AC1C51;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+    }
+    .formSection {
+        background-color: #AC1C51;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        color: #E3E3E3; 
+        select {
+            color:  #E3E3E3;
+        }
+        select option {
+            background-color: #AC1C51; 
+        }
+    }
+    footer {
+        background-color: #AC1C51;
+        color: #E3E3E3;
+        a {
+            color: #E3E3E3;
+        }
+    }
+}

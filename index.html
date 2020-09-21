@@ -4,22 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS LINK -->
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Piedra&family=Playfair+Display&family=Righteous&display=swap"
         rel="stylesheet">
+    <!-- LINK TO STYLESHEET -->
     <link rel="stylesheet" href="./styles/styles/style.css">
+
+    <!-- LINK TO FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./styles/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./styles/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./styles/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./styles/assets/favicon_io/site.webmanifest">
+
     <title>Movie app</title>
 </head>
 
+<!-- HEADER STYLES -->
 <body class="action">
     <div class="wrapper">
         <header>
             <h1>What do you want to watch tonight?</h1>
+            <!-- DESCRIPTION -->
             <p> Are you tired of always asking yourself what to watch? Are you endlessly scrolling through Netflix
                 trying to pick a movie? Select a genre that you want to watch and we will provide you with a bunch of
                 options! </p>
         </header>
+
         <main>
+            <!-- MOVIE GENRE SELECTOR FORM -->
             <section class="formSection">
                 <form action="">
                     <label for="movieGenre">Choose your genre:</label>
@@ -32,9 +45,11 @@
                     </select>
                 </form>
 
+                <!-- MOVIE YEAR SELECTOR FORM -->
                 <form action="">
                     <label for="movieYear">Choose the year it was released:</label>
                     <select autocomplete="off" name="movieYear" id="movieYear">
+                        <option value="">Surprise!</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
@@ -51,19 +66,23 @@
                 </form>
             </section>
 
+            <!-- GALLERY OUTPUT -->
             <section class="gallerySection">
                 <ul class="gallery"></ul>
             </section>
         </main>
     </div>
+
+    <!-- FOOTER -->
     <footer>
         <p>Created at <span><a href="https://junocollege.com/">Juno College</a></span></p>
     </footer>
 
 </body>
+
+<!-- LINK TO JS & JQUERY FILE -->
 <script src='https://code.jquery.com/jquery-3.4.0.min.js'
     integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
-
 
 </html>

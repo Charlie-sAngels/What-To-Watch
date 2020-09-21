@@ -242,6 +242,10 @@ img {
   width: 100%;
 }
 
+p {
+  letter-spacing: 1px;
+}
+
 header {
   text-align: center;
   width: 80%;
@@ -262,10 +266,6 @@ header p {
   margin: 0 auto;
   width: 90%;
   padding-bottom: 15px;
-}
-
-p {
-  letter-spacing: 1px;
 }
 
 .formSection {
@@ -393,6 +393,10 @@ footer p {
   color: #E3E3E3;
 }
 
+.horror .formSection select option {
+  background-color: #333333;
+}
+
 .horror footer {
   background-color: #333333;
   color: #E3E3E3;
@@ -410,34 +414,39 @@ footer p {
 }
 
 .comedy header {
-  background-color: #105F7E;
-  box-shadow: 5px 5px 10px #FFE91F;
-  color: #FFE91F;
+  background-color: #EB9486;
+  box-shadow: 5px 5px 10px lightblue;
+  color: #E3E3E3;
 }
 
 .comedy li {
-  background-color: #105F7E;
-  box-shadow: 5px 5px 10px #FFE91F;
-  color: #FFE91F;
+  background-color: #EB9486;
+  box-shadow: 5px 5px 10px lightblue;
+  color: #E3E3E3;
 }
 
 .comedy .formSection {
-  background-color: #105F7E;
-  box-shadow: 5px 5px 10px #FFE91F;
-  color: #FFE91F;
+  background-color: #EB9486;
+  box-shadow: 5px 5px 10px lightblue;
+  color: #E3E3E3;
 }
 
 .comedy .formSection select {
-  color: #FFE91F;
+  color: #E3E3E3;
+  opacity: 1;
+}
+
+.comedy .formSection select option {
+  background-color: #EB9486;
 }
 
 .comedy footer {
-  background-color: #105F7E;
-  color: #FFE91F;
+  background-color: #EB9486;
+  color: #E3E3E3;
 }
 
 .comedy footer a {
-  color: #FFE91F;
+  color: #E3E3E3;
 }
 
 .sciFi {
@@ -447,9 +456,75 @@ footer p {
   font-family: 'Righteous', cursive;
 }
 
+.sciFi header {
+  background-color: #CFDAE1;
+  box-shadow: 5px 5px 10px #726E97;
+  color: #333333;
+}
+
+.sciFi li {
+  background-color: #CFDAE1;
+  box-shadow: 5px 5px 10px #726E97;
+  color: #333333;
+}
+
+.sciFi .formSection {
+  background-color: #CFDAE1;
+  box-shadow: 5px 5px 10px #726E97;
+  color: #333333;
+}
+
+.sciFi .formSection select {
+  color: #333333;
+}
+
+.sciFi footer {
+  background-color: #CFDAE1;
+  color: #333333;
+}
+
+.sciFi footer a {
+  color: #333333;
+}
+
 .romance {
   background-image: url(../assets/romanceBackground.jpg);
   background-size: cover;
   background-position: center;
   font-family: 'Playfair Display', serif;
+}
+
+.romance header {
+  background-color: #AC1C51;
+  box-shadow: 5px 5px 10px #E3E3E3;
+  color: #E3E3E3;
+}
+
+.romance li {
+  background-color: #AC1C51;
+  box-shadow: 5px 5px 10px #E3E3E3;
+  color: #E3E3E3;
+}
+
+.romance .formSection {
+  background-color: #AC1C51;
+  box-shadow: 5px 5px 10px #E3E3E3;
+  color: #E3E3E3;
+}
+
+.romance .formSection select {
+  color: #E3E3E3;
+}
+
+.romance .formSection select option {
+  background-color: #AC1C51;
+}
+
+.romance footer {
+  background-color: #AC1C51;
+  color: #E3E3E3;
+}
+
+.romance footer a {
+  color: #E3E3E3;
 }
