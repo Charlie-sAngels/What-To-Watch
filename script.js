@@ -5,10 +5,10 @@ const movieApp = {};
 movieApp.key = "333bbafba7eed28cb6ecba2c4caeed82";
 
 //MOVIE GENRE VARIABLE
-let myMovie = 28; 
+movieApp.myMovie = 28;
 
 // AJAX CALL 
-movieApp.getMovies = function(myMovie, year) {
+movieApp.getMovies = function (myMovie, year) {
     $.ajax({
         url: `https://api.themoviedb.org/3/discover/movie`,
         method: "GET",
@@ -21,9 +21,13 @@ movieApp.getMovies = function(myMovie, year) {
         }
     }).then((res) => {
         $(".gallery").empty(); //TO EMPTY GALLERY UPON SELECTION
-        movieApp.displayResults(res);
+        const filteredMovies = movieApp.filterMovies(res.results)
+        movieApp.displayResults(filteredMovies);
     })
 }
+
+movieApp.filterMovies = (array) => array.filter(movie => movie.poster_path)
+
 
 // GENERATING RANDOM PAGE NUMBER 
 movieApp.randomPage = () => {
@@ -32,7 +36,7 @@ movieApp.randomPage = () => {
 
 //DISPLAYING ARRAY FOR GALLERY 
 movieApp.displayResults = (movies) => {
-    movies.results.forEach((movie) => {
+    movies.forEach((movie) => {
         $(".gallery").append(`
         <li> <div class="titleContainer">
             <p>${movie.title}</p></div>
@@ -45,22 +49,22 @@ movieApp.displayResults = (movies) => {
 
 // CHANGING GENRE STYLE UPON USER SELECTION FROM DROP-DOWN MENU
 movieApp.getGenre = () => {
-    $("#movieGenre").on("change", function() {
-        myMovie = $(this).val();
-        movieApp.getMovies(myMovie);
-        if (myMovie === "27") {
+    $("#movieGenre").on("change", function () {
+        movieApp.myMovie = $(this).val();
+        movieApp.getMovies(movieApp.myMovie);
+        if (movieApp.myMovie === "27") {
             $("body").removeClass();
             $("body").addClass("horror");
-        } else if (myMovie === "28") {
+        } else if (movieApp.myMovie === "28") {
             $("body").removeClass();
             $("body").addClass("action");
-        } else if (myMovie === "35") {
+        } else if (movieApp.myMovie === "35") {
             $("body").removeClass();
             $("body").addClass("comedy");
-        } else if (myMovie === "878") {
+        } else if (movieApp.myMovie === "878") {
             $("body").removeClass();
             $("body").addClass("sciFi");
-        } else if (myMovie === "10749") {
+        } else if (movieApp.myMovie === "10749") {
             $("body").removeClass();
             $("body").addClass("romance");
         };
@@ -71,7 +75,7 @@ movieApp.getGenre = () => {
 movieApp.getYear = () => {
     $("#movieYear").on("change", function () {
         const year = parseInt($(this).val());
-        movieApp.getMovies(myMovie, year);
+        movieApp.getMovies(movieApp.myMovie, year);
         return year
     });
 }
@@ -79,11 +83,11 @@ movieApp.getYear = () => {
 // INITIALIZING INIT
 movieApp.init = () => {
     movieApp.getGenre();
-    movieApp.getYear(); 
+    movieApp.getYear();
     movieApp.getMovies();
 }
 
 // DOCUMENT READY
-$(function() {
+$(function () {
     movieApp.init();
 })
